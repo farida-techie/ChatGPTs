@@ -15,7 +15,7 @@ import org.json.JSONObject
 import java.io.IOException
 
 class MainActivity : AppCompatActivity() {
-    val API_KEY = "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"
+    val API_KEY = "Add Here Your KEy"
     lateinit var recyclerView: RecyclerView
     lateinit var welcomeText :TextView
     lateinit var messageEditText:EditText
