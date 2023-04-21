@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_above="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Solution code android\n Chat GPT \nTry it out now"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:id="@+id/welcome_text"
+        android:layout_centerInParent="true"
+         />
+    <RelativeLayout
+        android:id="@+id/bottom_layout"
+        android:layout_alignParentBottom="true"
+        android:padding="8dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <EditText
+            android:id="@+id/message_edit_text"
+            android:layout_centerInParent="true"
+            android:hint="Write Here..."
+            android:padding="10dp"
+            android:layout_toLeftOf="@+id/send_bt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_corner"
+            />
+        <ImageButton
+            android:id="@+id/send_bt"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="10dp"
+            android:padding="8dp"
+            android:src="@drawable/ic_send"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>
